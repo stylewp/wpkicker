@@ -118,3 +118,14 @@ function wpkicker_content_width() {
 	$GLOBALS['content_width'] = apply_filters( 'wpkicker_content_width', 640 );
 }
 add_action( 'after_setup_theme', 'wpkicker_content_width', 0 );
+
+
+function wpkicker_fonts_url() {
+	$font_families = apply_filters( 'wpkicker_theme_fonts', array( 'Source+Sans+Pro:400,400i,700,700i' ) );
+	$query_args = array(
+		'family' => implode( '|', $font_families ),
+		'subset' => 'latin,latin-ext',
+	);
+	$fonts_url = add_query_arg( $query_args, 'https://fonts.googleapis.com/css' );
+	return esc_url_raw( $fonts_url );
+}

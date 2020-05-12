@@ -46,8 +46,7 @@ module.exports = {
 	textDomain: 'wpkicker', // Your textdomain here.
 	translationFile: 'wpkicker.pot', // Name of the translation file.
 	translationDestination: './languages', // Where to save the translation files.
-	packageName: 'WPGULP', // Package name.
-	bugReport: 'https://AhmadAwais.com/contact/', // Where can users report bugs.
+	packageName: 'WPGULP', // Package name. 
 	lastTranslator: 'Stylewp <stylewpnet@gmail.com>', // Last translator Email ID.
 	team: 'Stylewp <stylewpnet@gmail.com>', // Team's Email ID.
 
