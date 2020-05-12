@@ -1,0 +1,42 @@
+/*!
+Theme Name: WpKicker
+Theme URI: stylewp.net
+Author: Bojan Zlatanovic
+Author URI: stylewp.net
+Description: A blank starter theme for WordPress using WPGulp, Underscores, Bootstrap 4 and Font Awesome.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: stylewp
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready, bootstrap
+*/
+
+// Optional files - If you dont use the corresponding scripts/fonts comment em out nefore running nmp start
+ 
+// Bootstrap overide
+@import './theme/theme-variables';
+
+// Theme Base Styles 
+@import './theme/wpcore';
+@import './theme/forms'; 
+ 
+// Bootstrap 
+@import './bootstrap/bootstrap';
+  
+// Theme Style
+@import './theme/theme-base';
+@import './theme/menu';
+@import './theme/homepage';
+@import './theme/blog';
+@import './theme/posts';
+@import './theme/pages';
+@import './theme/widgets';
+@import './theme/navigation';
+@import './theme/pagination';
+@import './theme/comments';
+@import './theme/wpcore';
+@import './theme/forms';
+ 
+// Plugin Support
+//@import './theme/contact-form7';
+//@import './theme/woocommerce';
